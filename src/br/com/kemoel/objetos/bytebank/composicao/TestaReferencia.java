@@ -1,4 +1,4 @@
-package br.com.kemoel.objetos.bytebak.composicao;
+package br.com.kemoel.objetos.bytebank.composicao;
 
 public class TestaReferencia {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package br.com.kemoel.objetos.bytebak.metodos;
+package br.com.kemoel.objetos.bytebank.metodos;
 
 public class TestaMetodo {
     public static void main(String[] args) {

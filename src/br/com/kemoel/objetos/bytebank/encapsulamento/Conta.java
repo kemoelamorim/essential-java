@@ -1,4 +1,4 @@
-package br.com.kemoel.objetos.bytebak.encapsulamento;
+package br.com.kemoel.objetos.bytebank.encapsulamento;
 
 
 public class Conta {

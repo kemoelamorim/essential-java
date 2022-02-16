@@ -1,4 +1,4 @@
-package br.com.kemoel.objetos.bytebak.encapsulamento;
+package br.com.kemoel.objetos.bytebank.encapsulamento;
 
 public class TestaConstrutores {
     public static void main(String[] args) {

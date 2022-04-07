@@ -1,11 +1,11 @@
 package br.com.kemoel.heranca.funcionario;
 
 public class Gerente extends Funcionario implements Autenticavel{
-
+    
     private Autenticador autenticacaoUtil;
 
     public Gerente() {
-        Autenticador autenticacaoUtil = new Autenticador();
+        this.autenticacaoUtil = new Autenticador();
     }
 
     @Override

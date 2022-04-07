@@ -5,7 +5,7 @@ public class Cliente implements Autenticavel{
     private Autenticador autenticacaoUtil;
 
     public Cliente(){
-        Autenticador autenticacaoUtil = new Autenticador();
+        this.autenticacaoUtil = new Autenticador();
     }
 
     @Override

@@ -15,14 +15,14 @@ public abstract class Conta {
 
     public abstract void deposita(double valor);
 
-    void saca(double valor){
+    void saca(double valor)throws SaldoInsuficienteException{
         if (this.saldo < valor){
         	throw new SaldoInsuficienteException("Saldo: " + this.saldo + ",Valor: " + valor + ". Saldo Insuficiente");
         }
         this.saldo -= valor;
     }
 
-    void transfere(double valor, Conta destino){
+    void transfere(double valor, Conta destino)throws SaldoInsuficienteException{
         this.saca(valor);
         destino.deposita(valor);
            

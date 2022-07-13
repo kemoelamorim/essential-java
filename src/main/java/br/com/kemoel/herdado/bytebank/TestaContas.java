@@ -1,7 +1,7 @@
 package br.com.kemoel.herdado.bytebank;
 
 public class TestaContas {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SaldoInsuficienteException {
         ContaCorrente cc = new ContaCorrente(1290,899);
         cc.deposita(100.0);
         cc.saca(20);

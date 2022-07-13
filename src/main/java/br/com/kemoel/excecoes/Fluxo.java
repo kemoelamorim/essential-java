@@ -6,7 +6,7 @@ public class Fluxo {
 
         try{
             metodo1();
-        }catch(NullPointerException | ArithmeticException ex){
+        }catch(Exception ex){
             ex.printStackTrace(); // Imprime o rastro da pilha
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
@@ -14,20 +14,21 @@ public class Fluxo {
         System.out.println("Fim do método main");
     }
 
-    private static void metodo1(){
+    private static void metodo1() throws MinhaException{
         System.out.println("Iniciando método1");
         metodo2();
         System.out.println("Fim do método1");
     }
 
-    private static void metodo2() {
+    private static void metodo2() throws MinhaException{
         System.out.println("Iniciando médoto2");
-        for (int i = 1; i < 5 ; i++){
-            System.out.println(i);
-            // NullTeste testa = null;
-            // testa.testaNull();
-            int a = i / 0;
-        }
-        System.out.println("Fim do método2");
+        throw new ArithmeticException("Deu ruim");
+//        for (int i = 1; i < 5 ; i++){
+//            System.out.println(i);
+//            // NullTeste testa = null;
+//            // testa.testaNull();
+//            int a = i / 0;
+//        }
+//        System.out.println("Fim do método2");
     }
 }
